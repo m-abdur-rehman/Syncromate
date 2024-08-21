@@ -4,6 +4,10 @@ import React from "react";
 import Header from "./Component/header.js"; 
 import About from "./Component/about.js";
 import Projects from "./Component/projects.js";
+import Contact from "./Component/contact(not used).js";
+import Logocloud from "./Component/logocloud.js";
+import Footer from "./Component/footer.js";
+import Contact2 from "./Component/contact2.js";
 
 function App() {
   return (
@@ -12,6 +16,11 @@ function App() {
       {/* Other components or content */}
       <About />
       <Projects/>
+      <Logocloud/>
+      {/* <Contact/> */}
+      <Contact2 /> 
+
+      <Footer/>
     </div>
   );
 }
