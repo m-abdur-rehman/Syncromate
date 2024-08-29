@@ -1,3 +1,6 @@
 .Logo{
     margin-right: 5px;
 }
+html {
+    scroll-behavior: smooth;
+  }

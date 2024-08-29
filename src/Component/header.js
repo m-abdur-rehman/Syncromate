@@ -3,19 +3,20 @@
   import { Dialog, DialogPanel } from '@headlessui/react'
   import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
   import './header.css';
+  import { Link } from 'react-router-dom';
 
   const navigation = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#' },
-    { name: 'Our Solutions', href: '#' },
-    { name: 'Company', href: '#' },
+    { name: 'Home', href: '#header' },
+    { name: 'About', href: '#about' },
+    { name: 'Our Solutions', href: '#projects' },
+    { name: 'Company', href: '#contact2' },
   ]
 
   const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-      <div className="bg-white">
+      <div className="bg-white" id="header">
         <header className="absolute inset-x-0 top-0 z-50">
           <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
             <div className="flex lg:flex-1 items-center">
@@ -48,7 +49,7 @@
               ))}
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a href="#" className="text-base font-semibold leading-6 text-gray-900 px-4 py-2 transition duration-300 ease-in-out hover:text-indigo-600 hover:shadow-lg hover:shadow-indigo-500/50 hover:rounded-lg hover:scale-110">
+              <a href="#contact2" className="text-base font-semibold leading-6 text-gray-900 px-4 py-2 transition duration-300 ease-in-out hover:text-indigo-600 hover:shadow-lg hover:shadow-indigo-500/50 hover:rounded-lg hover:scale-110">
                 Meet with Us <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
@@ -78,18 +79,18 @@
                 <div className="-my-6 divide-y divide-gray-500/10">
                   <div className="space-y-2 py-6">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                   <div className="py-6">
                     <a
-                      href="#"
+                      href="#contact2"
                       className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Meet With Us
@@ -135,7 +136,7 @@
                 </a>
               </div> */}
             </div>
-            <div className="hidden sm:mt-8 sm:mb-8  sm:flex sm:justify-center">
+            <div className="mt-10 sm:mt-8 sm:mb-8  sm:flex sm:justify-center">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-back-900/10 hover:ring-gray-900/20">
                 Learn more About SyncroMate. {' '}
                 <a href="#" className="font-semibold text-indigo-600">

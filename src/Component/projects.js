@@ -135,7 +135,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="bg-white sm:py-24">
+    <div id="projects" className="bg-white sm:py-24">
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:text-left text-center">Our Projects</h2>
@@ -145,7 +145,7 @@ const Projects = () => {
         </div>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {cardData.map((card, index) => (
-        <div key={index} className="flex max-w-[20rem] flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+        <div key={index} className="mx-auto flex max-w-[20rem] flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
           <div className="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
             <img src={card.imageUrl} alt="ui/ux review check" />
           </div>
