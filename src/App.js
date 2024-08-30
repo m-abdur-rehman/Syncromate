@@ -9,6 +9,7 @@ import Projects from "./Component/projects.js";
 import Logocloud from "./Component/logocloud.js";
 import Footer from "./Component/footer.js";
 import Contact2 from "./Component/contact2.js";
+import Home from "./Component/home.js";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
 
       {/* Define the routes for different components */}
       <Header />
+      <Home />
       {/* Other components or content */}
       <About />
       <Projects/>
