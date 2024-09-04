@@ -29,10 +29,10 @@ const features = [
 
 export default function About() {
   return (
-    <div className="bg-white py-20 sm:py-0" id="about">  
+    <div className="py-20 sm:py-0" id="about">  
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <div className="mx-auto max-w-4xl lg:flex lg:items-center lg:gap-x-8">
-      <div
+      {/* <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
         >
@@ -43,11 +43,11 @@ export default function About() {
             }}
             className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-80 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
           />
-        </div>
+        </div> */}
   {/* Left section */}
   <div className="lg:w-1/2 lg:h-48 lg:ml-[-20px]">
     <h2 className="text-[40px] sm:text-[50px] font-bold leading-tight text-indigo-600 border-2 border-gray-900 p-8 sm:p-16 rounded-none text-center">
-    Why <img src='logonav.png'></img>
+    Why <img className="mx-auto" src='logonav.png'></img>
     </h2>
   </div>
 
