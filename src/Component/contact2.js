@@ -1,4 +1,5 @@
 import React from "react"
+import GradientBackground from "./colorbackground/colorgradeint"
 export default function Contact2() {
 
     // return (
@@ -107,7 +108,8 @@ export default function Contact2() {
     ]
 
     return (
-        <main className="py-14" id="contact">
+        <main className=" relative py-14" id="contact">
+            <GradientBackground/>
  
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
