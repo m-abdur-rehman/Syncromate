@@ -10,6 +10,7 @@ import Logocloud from "./Component/logocloud.js";
 import Footer from "./Component/footer.js";
 import Contact2 from "./Component/contact2.js";
 import Home from "./Component/home.js";
+import PastProjects from "./Component/pastprojects.js";
 
 function App() {
   return (
@@ -39,8 +40,9 @@ function App() {
       <Home />
       {/* Other components or content */}
       <About />
-      <Projects/>
-      <Logocloud/>
+      {/* <Projects/> */}
+      <PastProjects/>
+      {/* <Logocloud/> */}
       {/* <Contact/> */}
       <Contact2 /> 
 
