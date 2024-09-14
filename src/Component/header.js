@@ -24,7 +24,7 @@ const Header = () => {
               <span className="sr-only">SyncroMate</span>
               <img
                 alt=""
-                src="logonav.png"
+                src="logo_transparent.png"
                 className="h-8 w-auto"
               />
             </a>
@@ -62,7 +62,7 @@ const Header = () => {
                 <span className="sr-only">Your Company</span>
                 <img
                   alt=""
-                  src="logonav.png"
+                  src="logo_transparent.png"
                   className="h-8 w-auto"
                 />
               </a>

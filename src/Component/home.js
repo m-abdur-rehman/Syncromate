@@ -19,7 +19,7 @@ const Home = () => {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-8 sm:py-16 lg:py-30 lg:h-dvh">
+        <div className="mx-auto max-w-2xl py-8 sm:py-16 lg:pt-30 lg:pb-0 lg:h-[95dvh]">
 
           <div className="text-center">
             <h1 className="text-4xl mb-8 mt-8 font-bold tracking-tight text-gray-900 sm:text-6xl">

@@ -29,7 +29,7 @@ const features = [
 
 export default function About() {
   return (
-    <div className="py-20 sm:py-0" id="about">  
+    <div className="bg-white py-20 sm:py-0 sm:pb-20" id="about">  
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <div className="mx-auto max-w-4xl lg:flex lg:items-center lg:gap-x-8">
       {/* <div
@@ -47,7 +47,7 @@ export default function About() {
   {/* Left section */}
   <div className="lg:w-1/2 lg:h-48 lg:ml-[-20px]">
     <h2 className="text-[40px] sm:text-[50px] font-bold leading-tight text-indigo-600 border-2 border-gray-900 p-8 sm:p-16 rounded-none text-center">
-    Why <img className="mx-auto" src='logonav.png'></img>
+    Why <img src='logo_transparent.png'></img>
     </h2>
   </div>
         
