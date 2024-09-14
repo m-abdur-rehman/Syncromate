@@ -50,7 +50,7 @@ export default function About() {
     Why <img className="mx-auto" src='logonav.png'></img>
     </h2>
   </div>
-
+        
   {/* Right section */}
   <div className="lg:w-1/2">
     <p className="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
