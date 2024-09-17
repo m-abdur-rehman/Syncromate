@@ -55,7 +55,7 @@ export default function About() {
   {/* Right section */}
   <div className="lg:w-1/2">
     <p className="mt-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl text-center">
-    Your Trusted Partner in Delivering Innovative Software Solutions
+    Your Trusted Partner in Delivering Software Solutions
     </p>
     <p className="pt-4 text-lg leading-8 text-gray-600 text-center text-justify">
     At SyncroMate, we’re reshaping the digital transformation landscape by providing innovative, 
