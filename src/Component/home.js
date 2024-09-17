@@ -6,7 +6,7 @@ import './header.css';
 const Home = () => {
   return (
     <div className="bg-white" id="header">
-      <div className="relative isolate px-6 pt-14 lg:px-8 mb-[-32px]">
+      <div className="relative isolate px-6 pt-14 lg:px-8 ">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -43,7 +43,7 @@ const Home = () => {
                 </a>
               </div> */}
           </div>
-          <div className="mt-10 mt-10 mb-8 flex justify-center">
+          <div className="mt-20 mb-8 flex justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-back-900/10 hover:ring-gray-900/20">
               Learn more About SyncroMate. {' '}
               <a href="#" className="font-semibold text-indigo-600">
@@ -64,6 +64,8 @@ const Home = () => {
             }}
             className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
           />
+
+          
         </div>
       </div>
     </div>
