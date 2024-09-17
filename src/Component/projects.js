@@ -104,6 +104,7 @@
 //   }
   
 import React from 'react';
+import GradientBackground from './colorbackground/colorgradeint';
 
 const Projects = () => {
   const cardData = [
@@ -135,7 +136,8 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="bg-white sm:py-24">
+    <div id="projects" className="relative sm:py-24">
+      <GradientBackground/>
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:text-left text-center">Our Projects</h2>
@@ -171,6 +173,7 @@ const Projects = () => {
       ))}
       
   </div>
+  <GradientBackground/>
   <div className="mt-12 text-center">
       <a
         href="#"

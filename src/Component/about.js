@@ -1,38 +1,39 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import { WrenchIcon, StarIcon, DevicePhoneMobileIcon, ChatBubbleLeftEllipsisIcon } from '@heroicons/react/24/outline'
+import './about.css';
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Experience',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-    icon: CloudArrowUpIcon,
+      'Our exceptional team brings extensive experience and proven expertise to every project.',
+    icon: StarIcon,
   },
   {
-    name: 'SSL certificates',
+    name: 'Quick Support',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-    icon: LockClosedIcon,
+      'Get fast, reliable assistance anytime with our dedicated quick support team.',
+    icon: ChatBubbleLeftEllipsisIcon,
   },
   {
-    name: 'Simple queues',
+    name: 'Maintenance',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-    icon: ArrowPathIcon,
+      'Efficiently handle all your maintenance needs with our expert solutions.',
+    icon: WrenchIcon,
   },
   {
-    name: 'Advanced security',
+    name: 'Seamless Integration',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
+      'Effortlessly connect and streamline your systems with our integrated solutions.',
+    icon: DevicePhoneMobileIcon,
   },
 ]
 
 export default function About() {
   return (
-    <div className="bg-white py-20 sm:py-0 sm:pb-20" id="about">  
+    <div className="py-20 sm:py-20 sm:pb-20" id="about">  
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <div className="mx-auto max-w-4xl lg:flex lg:items-center lg:gap-x-8">
-      <div
+      {/* <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
         >
@@ -43,22 +44,23 @@ export default function About() {
             }}
             className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-80 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
           />
-        </div>
+        </div> */}
   {/* Left section */}
-  <div className="lg:w-1/2 lg:h-48 lg:ml-[-20px]">
-    <h2 className="text-[40px] sm:text-[50px] font-bold leading-tight text-indigo-600 border-2 border-gray-900 p-8 sm:p-16 rounded-none text-center">
+  <div className="lg:w-1/2 lg:h-54 lg:ml-[-20px]">
+    <h2 className="text-[36px] sm:text-[50px] font-bold leading-tight text-indigo-600 border-2 border-gray-900 p-8 sm:p-16 rounded-none text-center">
     Why <img src='logo_transparent.png'></img>
     </h2>
   </div>
-
+        
   {/* Right section */}
   <div className="lg:w-1/2">
-    <p className="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
-      Everything you need to deploy your app
+    <p className="mt-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl text-center">
+    Your Trusted Partner in Delivering Software Solutions
     </p>
-    <p className="mt-6 text-lg leading-8 text-gray-600 text-center text-justify">
-      Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-      pulvinar et feugiat blandit at. In mi viverra elit nunc.
+    <p className="pt-4 text-lg leading-8 text-gray-600 text-center text-justify">
+    At SyncroMate, we’re reshaping the digital transformation landscape by providing innovative, 
+    cost-effective solutions for businesses. SyncroMate connects leading expertise with innovative software solutions,
+    enabling businesses globally to thrive and expand effortlessly in the digital age.
     </p>
   </div>
 </div>
