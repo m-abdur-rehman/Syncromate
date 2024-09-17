@@ -4,22 +4,22 @@ import './PastProjects.css';
 const PastProjects = () => {
   const data = [
     {
-      img: './project_images/proj_2.jpg',
-      head: 'Direct Connect',
-      des: "A fintech company dedicated to putting the internet in the hands of users & make it safer for individuals and businesses.",
-      link: 'https://directconnect.vercel.app/',
+      img: './project_images/proj_10.jpg',
+      head: 'Solena',
+      des: "Join the Future of Solena.",
+      link: 'https://solana-project-chi.vercel.app/',
     },
     {
-      img: './project_images/proj_3.jpg',
-      head: 'StartUp Nix',
-      des: "Analyze and validate your Business Ideas in a snap and watch as a detailed report lands in your lap.",
-      link: 'https://siyal-huzaifasid.vercel.app/',
+      img: './project_images/proj_9.jpg',
+      head: 'Euphoria',
+      des: "Discover, Collect & Sell Extraordinary NFTs Art.",
+      link: 'https://solana-project-chi.vercel.app/',
     },
     {
-      img: './project_images/proj_4.jpg',
-      head: 'Slidey',
-      des: "Your Design Partner! Transforming Presentations into Powerful Narratives!",
-      link: 'https://www.slidey.io/',
+      img: './project_images/proj_7.jpg',
+      head: 'Ocean Dev',
+      des: "Leading the way in artificial intelligence to drive innovation and create positive impact on society.",
+      link: 'https://oceandevfrontend.vercel.app/',
     },
     {
       img: './project_images/proj_1.jpg',
@@ -34,10 +34,10 @@ const PastProjects = () => {
       link: 'https://moakhat.org/en',
     },
     {
-      img: './project_images/proj_7.jpg',
-      head: 'Ocean Dev',
-      des: "Leading the way in artificial intelligence to drive innovation and create positive impact on society.",
-      link: 'https://oceandevfrontend.vercel.app/',
+      img: './project_images/proj_4.jpg',
+      head: 'Slidey',
+      des: "Your Design Partner! Transforming Presentations into Powerful Narratives!",
+      link: 'https://www.slidey.io/',
     },
     {
       img: './project_images/proj_8.jpg',
@@ -46,16 +46,16 @@ const PastProjects = () => {
       link: 'https://www.meenabazaarbytaj.co.uk/',
     },
     {
-      img: './project_images/proj_10.jpg',
-      head: 'Solena',
-      des: "Join the Future of Solena.",
-      link: 'https://solana-project-chi.vercel.app/',
+      img: './project_images/proj_2.jpg',
+      head: 'Direct Connect',
+      des: "A fintech company dedicated to putting the internet in the hands of users & make it safer for individuals and businesses.",
+      link: 'https://directconnect.vercel.app/',
     },
     {
-      img: './project_images/proj_9.jpg',
-      head: 'Euphoria',
-      des: "Discover, Collect & Sell Extraordinary NFTs Art.",
-      link: 'https://solana-project-chi.vercel.app/',
+      img: './project_images/proj_3.jpg',
+      head: 'StartUp Nix',
+      des: "Analyze and validate your Business Ideas in a snap and watch as a detailed report lands in your lap.",
+      link: 'https://siyal-huzaifasid.vercel.app/',
     },
     {
       img: './project_images/proj_5.jpg',
@@ -103,7 +103,7 @@ const PastProjects = () => {
   };
 
   return (
-    <div id="projects" className="pt-10">
+    <div id="projects" className="pt-10 pb-12">
       <div>
         <h2 className="text-center text-3xl font-bold tracking-wide mb-8 text-[rgb(79,70,229)]">
           PAST PROJECTS
