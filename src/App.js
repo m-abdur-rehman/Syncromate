@@ -4,14 +4,13 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./Component/header.js"; 
 import About from "./Component/about.js";
-// import Projects from "./Component/projects.js";
-// // import Contact from "./Component/contact(not used).js";
-// import Logocloud from "./Component/logocloud.js";
+import Projects from "./Component/projects.js";
+// import Contact from "./Component/contact(not used).js";
+import Logocloud from "./Component/logocloud.js";
 import Footer from "./Component/footer.js";
 import Contact2 from "./Component/contact2.js";
 import Home from "./Component/home.js";
 import PastProjects from "./Component/pastprojects.js";
-import Divider from "./Component/divider/divider.js";
 
 function App() {
   return (
@@ -39,13 +38,10 @@ function App() {
       {/* Define the routes for different components */}
       <Header />
       <Home />
-      {/* <Divider/> */}
       {/* Other components or content */}
       <About />
-      {/* <Divider/> */}
       {/* <Projects/> */}
       <PastProjects/>
-      {/* <Divider/> */}
       {/* <Logocloud/> */}
       {/* <Contact/> */}
       <Contact2 /> 
