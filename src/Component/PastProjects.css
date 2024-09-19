@@ -15,15 +15,3 @@
     }
   }
   
-#projects {
-    background: linear-gradient(
-        to right, 
-        rgba(168, 174, 232, 0.796),
-        rgba(254, 254, 255, 0.9) /* Indigo color with opacity */
-          /* Lighter shade of indigo with opacity */
-    );
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; /* Adjust height as needed */
-    z-index: 0;
-}

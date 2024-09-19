@@ -1,11 +1,9 @@
 import React from 'react'
-import './footer.css';
-import GradientBackground from './colorbackground/colorgradeint'
 
 export default function Footer() {
   return (
     
-    <footer className="bg-grey-50" id='footer'>
+    <footer className="bg-gray-100">
 
   <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
     <div className="flex justify-center text-teal-600">
