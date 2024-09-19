@@ -107,7 +107,8 @@ export default function Contact2() {
     ]
 
     return (
-        <main className="py-14" id="contact">
+        // <main className="py-14 " id="contact">
+        <main className="py-14 scroll-m-[30px] md:scroll-m-[35px]" id="contact">
  
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">

@@ -103,7 +103,7 @@ const PastProjects = () => {
   };
 
   return (
-    <div id="projects" className="pt-10">
+    <div id="projects" className="py-6 sm:py-10 scroll-mt-16">
       <div>
         <h2 className="text-center text-3xl font-bold tracking-wide mb-8 text-[rgb(79,70,229)]">
           PAST PROJECTS
