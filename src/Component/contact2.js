@@ -3,6 +3,7 @@ import React, { useState } from "react";
 export default function Contact2() {
     const [formData, setFormData] = useState({ fullName: "", email: "", company: "", message: "" });
     const [submitted, setSubmitted] = useState(false);
+    const API_URL = process.env.REACT_APP_API_URL
 
     const contactMethods = [
         {
@@ -38,7 +39,7 @@ export default function Contact2() {
         e.preventDefault();
         
         try {
-            const response = await fetch('https://syncromate.vercel.app/api/contact', {
+            const response = await fetch('${API_URL}/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
