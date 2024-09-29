@@ -7,25 +7,77 @@ router.post('/contact', async (req, res) => {
     const { fullName, email, company, message } = req.body;
 
     try {
-        // Save to MongoDB
+        // Save to MongoDB 
         const newContact = new Contact({ fullName, email, company, message });
         await newContact.save();
 
         // Configure Nodemailer transporter
+        // const transporter = nodemailer.createTransport({
+        //     service: 'gmail', // or another service
+        //     auth: {
+        //         user: process.env.EMAIL_USER,
+        //         pass: process.env.EMAIL_PASS
+        //     }
+        // });
+
         const transporter = nodemailer.createTransport({
-            service: 'gmail', // or another service
+            port: 465,
+            host: "smtp.gmail.com",
             auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASS
-            }
+                user: "process.env.EMAIL_USER",
+                pass: "process.env.EMAIL_PASS"
+            },
+            secure: true,
         });
 
+
+        await new Promise((resolve,reject) => {
+
+            transporter.verify(function(error,success){
+                if(error){
+                    console.log(error);
+                    reject(error);
+                }
+                else{
+                    console.log("server is ready to take messages");
+                    resolve(success);
+                }
+            });
+        });
+
+
         // Send email
-        await transporter.sendMail({
-            from: process.env.EMAIL_USER,
+        // await transporter.sendMail({
+        //     from: process.env.EMAIL_USER,
+        //     to: email,
+        //     subject: `Thank you for contacting us, ${fullName}`,
+        //     text: `We received your message and will get back to you soon.\n\nYour message:\n${message}`
+        // });
+
+
+        const mailData = {
+            from: {
+                name: `${fullName}`,
+                address: process.env.EMAIL_USER,
+            },
+            replyTo: email,
             to: email,
             subject: `Thank you for contacting us, ${fullName}`,
-            text: `We received your message and will get back to you soon.\n\nYour message:\n${message}`
+            text: 'We received your message and will get back to you soon.\n\nYour message:\n${message}',
+            html: `${message}`,
+        };
+        
+        await new Promise((resolve, reject) => {
+            // send mail
+            transporter.sendMail(mailData, (err, info) => {
+                if (err) {
+                    console.error(err);
+                    reject(err);
+                } else {
+                    console.log(info);
+                    resolve(info);
+                }
+            });
         });
 
         res.status(200).json({ message: 'Form submitted successfully!' });
