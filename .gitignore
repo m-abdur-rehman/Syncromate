@@ -22,3 +22,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+./backend-syncro/node_modules
+/backend-syncro/node_modules

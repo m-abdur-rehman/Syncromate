@@ -1,7 +1,10 @@
-const express = require('express');
-const nodemailer = require('nodemailer');
-const router = express.Router();
+require('dotenv').config();
+const { Router } = require('express');
+const { createTransport } = require('nodemailer');
 const Contact = require('../models/Contact.js'); // Assuming you have a Contact model
+// import postmark from "postmark";
+const router = Router();    
+
 
 router.post('/contact', async (req, res) => {
     const { fullName, email, company, message } = req.body;
@@ -20,12 +23,24 @@ router.post('/contact', async (req, res) => {
         //     }
         // });
 
-        const transporter = nodemailer.createTransport({
+        // const transporter = nodemailer.createTransport({
+        //     port: 465,
+        //     host: "smtp.gmail.com",
+        //     auth: {
+        //         user: "process.env.EMAIL_USER",
+        //         pass: "process.env.EMAIL_PASS"
+        //     },
+        //     secure: true,
+        // });
+        const emailuser = process.env.EMAIL_USER;
+        const emailPassword = process.env.EMAIL_PASS;
+
+        const transporter = createTransport({
             port: 465,
             host: "smtp.gmail.com",
             auth: {
-                user: "process.env.EMAIL_USER",
-                pass: "process.env.EMAIL_PASS"
+                user: emailuser,
+                pass: emailPassword
             },
             secure: true,
         });
@@ -58,7 +73,7 @@ router.post('/contact', async (req, res) => {
         const mailData = {
             from: {
                 name: `${fullName}`,
-                address: process.env.EMAIL_USER,
+                address: "syncromate.solutions@gmail.com",
             },
             replyTo: email,
             to: email,
@@ -87,7 +102,7 @@ router.post('/contact', async (req, res) => {
     }
 });
 
-module.exports = router;
+module.exports = router;    
 
 
 
