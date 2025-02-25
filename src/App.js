@@ -12,7 +12,7 @@ import Contact2 from "./Component/contact2.js";
 import Home from "./Component/home.js";
 import PastProjects from "./Component/pastprojects.js";
 
-function App() {
+function App() {  
   return (
     <Router>
       <div>
